@@ -1,0 +1,11 @@
+.cards {
+    background-color: lightgray;
+    max-width: 86%;
+    margin: auto;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}

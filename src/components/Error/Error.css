@@ -1,0 +1,21 @@
+.error_number {
+font-size: 15rem;
+color: #FF6060;
+text-align: center;
+margin-bottom: 0;
+font-weight: bold;
+}
+
+.error_title {
+color: #FF6060;
+font-size: 27px;
+text-align: center;
+margin-bottom: 7rem ;
+}
+
+.error_return {
+color: #FF6060;
+font-size: 18px;
+text-decoration: underline;
+text-align: center;
+}

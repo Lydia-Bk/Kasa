@@ -1,0 +1,25 @@
+.banner {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    padding-inline: 2rem;
+    min-height: 160px;
+    max-width: 85vw;
+    margin: auto;
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
+    color: white;
+    background-image: url(./../../../public/IMG.png);
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    font-size: 24px;
+
+}
+
+.banner::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    opacity: .5;
+}
