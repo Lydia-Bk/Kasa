@@ -28,3 +28,18 @@
     color: #FF6060;
 }
 
+.apartment_description_flexbox {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem;
+}
+
+.About_container {
+    width: 80%;
+    margin: auto;
+}
+
+.apartment_description {
+margin-bottom: 1rem;
+font-size: 20px;
+}

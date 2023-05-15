@@ -12,6 +12,7 @@ import Error from '../Error/Error'
 // TODO spacing dans toutes les pages
 // TODO APPARTMENT PAGE carousel
 // TODO APPARTMENT PAGE profile images
+// TODO collapsibles
 // TODO rendre les composants dynamiques
 
 const App = () => {

@@ -6,10 +6,13 @@ const ApartmentPage = () => {
     return (
         <div className='apartment_page'>
 
-            <ApartmentHeader/>
-            
-            <ApartmentDescription/>
-            <ApartmentDescription/>
+            <ApartmentHeader />
+
+            <div className="apartment_description_flexbox">
+                <ApartmentDescription />
+                <ApartmentDescription />
+                
+            </div>
 
         </div>
     );
