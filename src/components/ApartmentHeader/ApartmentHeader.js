@@ -5,7 +5,7 @@ const ApartmentHeader = () => {
     return (
         <div>
             <div className='carroussel_photo'>
-                <img src="background.png" alt="img" />
+                <img src="/background.png" alt="img" />
             </div>
 
             <div className="apartment_header">
@@ -24,7 +24,7 @@ const ApartmentHeader = () => {
                     <div className="apartment_owner_details">
                         <h3><span>Alexandre</span><span>Dumas</span></h3>
                         <div className="apartment_owner_badge">
-        
+                            {/* <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Meeting_M%C3%A9lenchon_Toulouse_-_2017-04-16_-_Jean-Luc_M%C3%A9lenchon_-_41_%28cropped_2%29.jpg"/> */}
                         </div>
                     </div>
 

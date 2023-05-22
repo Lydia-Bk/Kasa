@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <nav className='navbar'>
             <div className="navbar_logo">
-                <img src="logo.png" alt="logo_kasa" />
+                <img src="/LOGO.png" alt="logo_kasa" />
             </div>
             <NavLink to="/">Accueil</NavLink>
             <NavLink to="/about">A propos</NavLink>

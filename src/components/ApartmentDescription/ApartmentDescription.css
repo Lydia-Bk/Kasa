@@ -26,6 +26,7 @@
     top: -0.4rem;
     z-index: -1;
     color: #FF6060;
+    list-style-type: none;
 }
 
 .apartment_description_flexbox {
@@ -42,4 +43,5 @@
 .apartment_description {
 margin-bottom: 1rem;
 font-size: 20px;
+flex-basis: 50%;
 }

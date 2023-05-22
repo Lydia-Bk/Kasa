@@ -1,12 +1,13 @@
 import React from 'react';
 import Banner from '../components/Banner/Banner';
 import ApartmentDescription from '../components/ApartmentDescription/ApartmentDescription';
+import BannerAbout from '../components/BannerAbout/BannerAbout'
 
 
 const About = () => {
     return (
         <div>
-            <Banner />
+            <BannerAbout/>
 
 <div className="About_container">
             <ApartmentDescription />

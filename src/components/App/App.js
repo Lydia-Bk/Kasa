@@ -27,7 +27,8 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/*" element={<Error />} />
-            <Route path="/logement" element={<ApartmentPage />} />
+            {/* TODO dynamic route */}
+            <Route path="/logement/:id" element={<ApartmentPage />} />
           </Routes>
         </main>
         <Footer />
