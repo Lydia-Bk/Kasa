@@ -1,4 +1,4 @@
-.apartment_description p {
+.dropdown_description p {
     margin-block: 0;
     display: flex;
     justify-content: space-between;
@@ -6,19 +6,15 @@
 }
 
 
-.apartment_description_title {
+.dropdown_description_title {
     background-color: #FF6060;
     color: white;
     padding: 0.8rem;
     border-radius: 0.6rem;
-}
-
-.apartment_description_title i {
     cursor: pointer;
-
 }
 
-.apartment_description_content {
+.dropdown_description_content {
     background-color: #F6F6F6;
     padding: 1rem;
     border-radius: 1rem;
@@ -29,7 +25,11 @@
     list-style-type: none;
 }
 
-.apartment_description_flexbox {
+.dropdown_description_content.disabled {
+    display: none;
+}
+
+.dropdown_description_flexbox {
     display: flex;
     gap: 1.5rem;
     margin: 1rem;
@@ -40,8 +40,8 @@
     margin: auto;
 }
 
-.apartment_description {
-margin-bottom: 1rem;
-font-size: 20px;
-flex-basis: 50%;
+.dropdown_description {
+    margin-bottom: 1rem;
+    font-size: 20px;
+    flex-basis: 50%;
 }

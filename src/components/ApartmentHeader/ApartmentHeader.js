@@ -1,39 +1,40 @@
 import React from 'react';
 import "./ApartmentHeader.css"
 
-const ApartmentHeader = () => {
+const ApartmentHeader = (props) => {
+    // function generateRating() {
+    //     let stars = []
+    //     for(let i = 0; i == props.rating; i++) {
+    //         stars.push(<i class="fa-solid fa-star" style="color: #ff6060;"></i>)
+    //     }
+    //     return stars;
+    // }
+
     return (
         <div>
-            <div className='carroussel_photo'>
-                <img src="/background.png" alt="img" />
-            </div>
-
             <div className="apartment_header">
                 <div apartment_page className="apartment_page_title">
-                    <h1>Cozy loft on the Canal Saint Martin</h1>
-                    <h2>Paris, Ile de France</h2>
+                    <h1>{props.title}</h1>
+                    <h2>{props.location}</h2>
                     <div className='tags'>
-                        <span>Cozy</span>
-                        <span>Canal</span>
-                        <span>Paris 10</span>
+                        {props.tags.map((tag) => (
+                            <span>{tag}</span>
+                        ))}
                     </div>
                 </div>
 
-
                 <div className="apartment_owner">
                     <div className="apartment_owner_details">
-                        <h3><span>Alexandre</span><span>Dumas</span></h3>
+                        <h3>{props.host.name}</h3>
                         <div className="apartment_owner_badge">
-                            {/* <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Meeting_M%C3%A9lenchon_Toulouse_-_2017-04-16_-_Jean-Luc_M%C3%A9lenchon_-_41_%28cropped_2%29.jpg"/> */}
+                            <img src={props.host.picture} alt="host image" />
                         </div>
                     </div>
 
+                    {/* <i class="fa-solid fa-star" style="color: #e3e3e3;"></i> */}
+                    
                     <div className="apartment_owner_stars">
-                        <span className='on'>★</span>
-                        <span className='on'>★</span>
-                        <span className='on'>★</span>
-                        <span className='off'>★</span>
-                        <span className='off'>★</span>
+                        {/* RATING ICI */}
                     </div>
                 </div>
             </div>

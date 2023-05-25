@@ -1,0 +1,29 @@
+.main_gallery img {
+    width: 100%;
+}
+
+.main_gallery {
+    /* position: relative; */
+    background-color: red;
+}
+
+.gallery_current_img {
+    background-color: blue;
+    /* position: absolute; */
+    height: 100%;
+}
+
+.left_arrow {
+    background-color: green;
+    /* position: absolute; */
+}
+
+.right_arrow {
+    background-color: darkmagenta;
+    /* position: absolute; */
+}
+
+.gallery_counter {
+    background-color: black;
+    /* position: absolute; */
+}
