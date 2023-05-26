@@ -1,11 +1,15 @@
 .cards {
-    background-color: lightgray;
-    max-width: 86%;
-    margin: auto;
-    border-radius: 2rem;
+    width: 100%;
+    background-color: #F6F6F6;
+    border-radius: 15px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem;
+}
+
+.card {
+    width: 30%;
+    padding: 10px;
 }

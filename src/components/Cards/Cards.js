@@ -9,9 +9,11 @@ const Cards = () => {
     return (
         <div className='cards'>
             {apartmentsList.map((apartment) => ( // on boucle sur tous les appartements dans le fichier json
-                <Link to={`/logement/${apartment.id}`}>
-                    <AppartmentCard apartmentTitle={apartment.title} apartmentCover={apartment.cover} />
-                </Link>
+                <div className='card'>
+                    <Link to={`/logement/${apartment.id}`}>
+                        <AppartmentCard apartmentTitle={apartment.title} apartmentCover={apartment.cover} />
+                    </Link>
+                </div>
             ))}
         </div>
     );

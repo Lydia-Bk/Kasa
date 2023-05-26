@@ -1,23 +1,23 @@
 .apartment {
+    position: relative;
     height: 15rem;
     background-color: #FF6060;
-    flex-basis: 27%;
-    gap: 1rem;
-    border-radius: 1rem;
-    position: relative;
-    padding: 0;
+    overflow: hidden;
+    border-radius: 15px;
 }
 
 .apartment_title {
-    color: white;
     position: absolute;
-    bottom: 5px;
-    left: 5px;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+    font-size: 15px;
+    color: white;
 }
 
 .apartment img {
+    position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 1rem;
 }

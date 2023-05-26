@@ -1,3 +1,8 @@
-main {
+body {
+    margin: 0px;
+}
+
+#app {
     font-family: 'Montserrat', sans-serif;
+    margin: 0px 50px;
 }

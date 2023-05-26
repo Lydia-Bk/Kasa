@@ -17,9 +17,9 @@
 
 }
 
-.banner::before {
+.bannerAbout::before {
     position: absolute;
     content: "";
     inset: 0;
-    opacity: .5;
+    opacity: 0.5;
 }

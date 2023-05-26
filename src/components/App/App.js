@@ -18,8 +18,7 @@ import Error from '../Error/Error'
 const App = () => {
   // tout ce qui est en dehors de `BrowserRouter` est affiché sur toutes les pages
   return (
-    <>
-       {/* <AppartmentCard title="GREAT APPARTMENT DANS LE 77" photo="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-2.jpg" />  */}
+    <div id="app">
       <BrowserRouter>
         <Navbar />
         <main>
@@ -33,7 +32,7 @@ const App = () => {
         </main>
         <Footer />
       </BrowserRouter>
-    </>
+    </div>
   );
 };
 

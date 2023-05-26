@@ -31,8 +31,8 @@ const Gallery = (props) => {
                     <i className="fa-solid fa-chevron-left"></i>
                 </div>
 
-                <div className="right_arrow">
-                    <i className="fa-solid fa-chevron-right" onClick={nextSlide}></i>
+                <div className="right_arrow" onClick={nextSlide}>
+                    <i className="fa-solid fa-chevron-right"></i>
                 </div>
 
                 <div className="gallery_counter">
@@ -42,6 +42,5 @@ const Gallery = (props) => {
         </div>
     );
 };
-
 
 export default Gallery;
