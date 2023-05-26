@@ -2,13 +2,14 @@ import React from 'react';
 import "./ApartmentHeader.css"
 
 const ApartmentHeader = (props) => {
-    // function generateRating() {
-    //     let stars = []
-    //     for(let i = 0; i == props.rating; i++) {
-    //         stars.push(<i class="fa-solid fa-star" style="color: #ff6060;"></i>)
-    //     }
-    //     return stars;
-    // }
+    function renderRatings() {
+        let ratings = []
+        for(let i = 0; i <= 5; i++) {
+            // i < props.ratings ? ratings.push(<i class="fa-solid fa-star" style="color: red;"></i>) : ratings.push(<i class="fa-solid fa-star" style="color: grey;"></i>);
+            i < props.ratings ? ratings.push("corail") : ratings.push("gris");
+        }
+        return ratings
+    }
 
     return (
         <div>
@@ -33,9 +34,7 @@ const ApartmentHeader = (props) => {
 
                     {/* <i class="fa-solid fa-star" style="color: #e3e3e3;"></i> */}
                     
-                    <div className="apartment_owner_stars">
-                        {/* RATING ICI */}
-                    </div>
+                    <div className="apartment_owner_stars">ratings : {renderRatings}</div>
                 </div>
             </div>
 
