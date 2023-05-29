@@ -12,14 +12,12 @@ const Collapse = (props) => {
                 {props.title}
                 <i className={`fa-solid ${isOpen ? "fa-chevron-up" : "fa-chevron-down"}`}></i>
             </p>
-            <p className={`dropdown_description_content ${isOpen ? "" : "disabled"}`}>
+            <div className={`dropdown_description_content ${isOpen ? "" : "disabled"}`}>
                 {Array.isArray(props.content) && <ul>
-                    {props.content.map(equipment => <li>{equipment}</li>)}
+                    {props.content.map(equipment => <li key={equipment} >{equipment}</li>)}
                     </ul>}
                 {!Array.isArray(props.content) && props.content}
-
-           
-            </p>
+            </div>
         </div>
     );
 };

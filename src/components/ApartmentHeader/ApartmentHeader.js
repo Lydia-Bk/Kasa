@@ -2,11 +2,10 @@ import React from 'react';
 import "./ApartmentHeader.css"
 
 const ApartmentHeader = (props) => {
-    function renderRatings() {
+    const renderRatings = () => {
         let ratings = []
-        for(let i = 0; i <= 5; i++) {
-            // i < props.ratings ? ratings.push(<i class="fa-solid fa-star" style="color: red;"></i>) : ratings.push(<i class="fa-solid fa-star" style="color: grey;"></i>);
-            i < props.ratings ? ratings.push("corail") : ratings.push("gris");
+        for(let i = 1; i <= 5; i++) {
+            i <= props.rating ? ratings.push('#FF6060') : ratings.push('grey');
         }
         return ratings
     }
@@ -14,12 +13,12 @@ const ApartmentHeader = (props) => {
     return (
         <div>
             <div className="apartment_header">
-                <div apartment_page className="apartment_page_title">
+                <div className="apartment_page_title">
                     <h1>{props.title}</h1>
                     <h2>{props.location}</h2>
                     <div className='tags'>
                         {props.tags.map((tag) => (
-                            <span>{tag}</span>
+                            <span key={tag}>{tag}</span>
                         ))}
                     </div>
                 </div>
@@ -28,13 +27,16 @@ const ApartmentHeader = (props) => {
                     <div className="apartment_owner_details">
                         <h3>{props.host.name}</h3>
                         <div className="apartment_owner_badge">
-                            <img src={props.host.picture} alt="host image" />
+                            <img src={props.host.picture} alt="host" />
                         </div>
                     </div>
 
-                    {/* <i class="fa-solid fa-star" style="color: #e3e3e3;"></i> */}
-                    
-                    <div className="apartment_owner_stars">ratings : {renderRatings}</div>
+                    <div className="apartment_owner_stars">{renderRatings().map((ratingColor, i) => <i
+                        key={i}
+                        className="fa-solid fa-star" 
+                        style={{
+                            color: ratingColor
+                    }}></i>)}</div>
                 </div>
             </div>
 

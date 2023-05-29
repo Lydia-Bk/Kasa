@@ -3,7 +3,6 @@
     background-color: #F6F6F6;
     border-radius: 15px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem;
