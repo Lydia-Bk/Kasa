@@ -21,7 +21,12 @@
 }
 
 .banner h2 {
-    color: #ffffff;  
-    text-align: center;
+    color: #ffffff;
     position: inherit;
+}
+
+@media only screen and (max-width: 900px)  {
+    .banner {
+        text-align: left;
+    }
 }

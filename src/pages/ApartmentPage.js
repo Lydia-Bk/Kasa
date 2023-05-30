@@ -4,6 +4,7 @@ import Collapse from '../components/Collapse/Collapse';
 import ApartmentHeader from '../components/ApartmentHeader/ApartmentHeader';
 import apartmentsList from "../data/logements.json"
 import Gallery from '../components/Gallery/Gallery';
+import "../css/pages/apartment_page.css"
 
 
 const ApartmentPage = () => {
@@ -11,9 +12,7 @@ const ApartmentPage = () => {
     const appartment = apartmentsList.find(appartment => appartment.id === id);
 
     return (
-
         <div className='apartment_page'>
-
             <Gallery pictures={appartment.pictures}/>
 
             <ApartmentHeader
@@ -26,11 +25,10 @@ const ApartmentPage = () => {
                 equipments={appartment.equipments}
                 tags={appartment.tags} />
 
-            {appartment && <div className="apartment_description_flexbox">
-                <Collapse title="Description" content={appartment.description} />
-                <Collapse title="Logements" content={appartment.equipments} />
+            {appartment && <div className="apartment_info">
+                <Collapse title="Description" content={appartment.description}/>
+                <Collapse title="Logements" content={appartment.equipments}/>
             </div>}
-
         </div>
     );
 };

@@ -6,9 +6,9 @@ const AppartmentCard = (props) => {
     const apartmentCover = props.apartmentCover
 
     return (
-        <div className='apartment'>
-            <div className="apartment_title">{apartmentTitle}</div>
-            <img src={apartmentCover} alt="apartment"/>
+        <div className='apartment_card'>
+            <div className="apartment_card_title">{apartmentTitle}</div>
+            <img src={apartmentCover} alt="apartment_img"/>
         </div>
     );
 };

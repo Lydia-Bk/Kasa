@@ -4,7 +4,7 @@
     background-size: cover;
     padding-inline: 2rem;
     min-height: 160px;
-    max-width: 85vw;
+    width: 100%;
     margin: auto;
     border-radius: 1rem;
     display: grid;
@@ -12,9 +12,13 @@
     color: white;
     background-image: url(./../../../public/paysage.png);
     margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 20px;
     font-size: 24px;
+}
 
+.about_info {
+    margin: auto;
+    width: 80%;
 }
 
 .bannerAbout::before {
@@ -22,4 +26,22 @@
     content: "";
     inset: 0;
     opacity: 0.5;
+}
+
+.about_info .collapse_container {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 900px)  {
+    /* .bannerAbout {
+        margin: 0 0 20px;
+    } */
+
+    .about_info {
+        width: 100%;
+    }
+
+    .about_info .collapse_container {
+        margin-bottom: 20px;
+    }
 }

@@ -1,0 +1,20 @@
+.apartment_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.apartment_info .collapse_container {
+  width: 46%;
+}
+
+@media only screen and (max-width: 900px)  {
+  .apartment_info {
+    flex-direction: column;
+  }
+
+  .apartment_info .collapse_container {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

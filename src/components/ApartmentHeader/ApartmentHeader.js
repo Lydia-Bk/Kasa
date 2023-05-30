@@ -11,35 +11,29 @@ const ApartmentHeader = (props) => {
     }
 
     return (
-        <div>
-            <div className="apartment_header">
-                <div className="apartment_page_title">
-                    <h1>{props.title}</h1>
-                    <h2>{props.location}</h2>
-                    <div className='tags'>
-                        {props.tags.map((tag) => (
-                            <span key={tag}>{tag}</span>
-                        ))}
-                    </div>
-                </div>
-
-                <div className="apartment_owner">
-                    <div className="apartment_owner_details">
-                        <h3>{props.host.name}</h3>
-                        <div className="apartment_owner_badge">
-                            <img src={props.host.picture} alt="host" />
-                        </div>
-                    </div>
-
-                    <div className="apartment_owner_stars">{renderRatings().map((ratingColor, i) => <i
-                        key={i}
-                        className="fa-solid fa-star" 
-                        style={{
-                            color: ratingColor
-                    }}></i>)}</div>
+        <div className="apartment_header_container">
+            <div className="apartment_title">
+                <h2>{props.title}</h2>
+                <p>{props.location}</p>
+                <div className='apartment_tags'>
+                    {props.tags.map((tag) => (
+                        <span key={tag} className='tag'>{tag}</span>
+                    ))}
                 </div>
             </div>
 
+            <div className="apartment_owner">
+                <div className="apartment_owner_details">
+                    <p className="apartment_owner_name">{props.host.name}</p>
+                    <div className="apartment_owner_avatar">
+                        <img src={props.host.picture} alt="host" />
+                    </div>
+                </div>
+                <div className="ratings">{renderRatings().map((ratingColor, i) => 
+                    <i key={i} className="fa-solid fa-star" style={{color: ratingColor}}></i>
+                )}
+                </div>
+            </div>
         </div>
     );
 };

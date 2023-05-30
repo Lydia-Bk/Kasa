@@ -7,10 +7,12 @@ const Navbar = () => {
     return (
         <nav className='navbar'>
             <div className="navbar_logo">
-                <img src="/LOGO.png" alt="logo_kasa" />
+                <NavLink to="/"><img src="/LOGO.png" alt="logo_kasa"/></NavLink>
             </div>
-            <NavLink to="/">Accueil</NavLink>
-            <NavLink to="/about">A propos</NavLink>
+            <div className="navbar_links">
+                <NavLink className="navbar_link" to="/">Accueil</NavLink>
+                <NavLink className="navbar_link" to="/about">À propos</NavLink>
+            </div>
         </nav>
     );
 };

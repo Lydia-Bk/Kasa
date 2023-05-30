@@ -1,21 +1,39 @@
 .navbar {
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
     align-items: center;
     padding: 25px 0px;
-    color: #FF6060;
     font-weight: bold;
     font-size: 20px;
-
 }
 
-.navbar_logo {
-    margin-right: auto;
-    max-height: 8rem;
+.navbar_logo img {
+    width: 100%;
 }
 
-a {
+.navbar_link {
     color: #FF6060;
     text-decoration: none;
+    margin-left: 60px;
     cursor: pointer;
+}
+
+.navbar_link.active {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px)  {
+    .navbar_logo {
+        width: 50%;
+    }
+
+    .navbar_links {
+        display: flex;
+    }
+
+    .navbar_link {
+        text-transform: uppercase;
+        margin-left: 10px;
+        font-size: 0.8rem;
+    }
 }

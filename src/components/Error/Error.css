@@ -1,21 +1,30 @@
-.error_number {
-font-size: 15rem;
-color: #FF6060;
-text-align: center;
-margin-bottom: 0;
-font-weight: bold;
-}
-
-.error_title {
-color: #FF6060;
-font-size: 27px;
-text-align: center;
-margin-bottom: 7rem ;
-}
-
-.error_return {
-color: #FF6060;
-font-size: 18px;
-text-decoration: underline;
-text-align: center;
-}
+.error_container {
+    text-align: center;
+    color: #FF6060;
+  }
+  
+  .error_title {
+    font-size: 200px;
+    margin: 0px;
+  }
+  
+  .error_subtitle {
+    font-size: 25px;
+    margin-bottom: 150px;
+  }
+  
+  .error_link {
+    font-size: 20px;
+    text-decoration: underline;
+    color: #FF6060;
+  }
+  
+  @media only screen and (max-width: 900px)  {
+    .error_container {
+      margin-top: 30%;
+    }
+  
+    .error_title {
+      font-size: 100px;
+    }
+  }
